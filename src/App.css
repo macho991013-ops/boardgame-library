@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(#f6f2ea, #ebe5d8);
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #fffaf2;
+  border: 1px solid #ddd2c0;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 2px 2px 0 #e0d6c5;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  font-size: 12px;
+}
+
+button {
+  font-size: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.genre-buttons {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.genre-btn {
+  border-radius: 20px;
+  border: none;
+  color: white;
+  opacity: 0.5;
+}
+
+.genre-btn.active {
+  opacity: 1;
+}
+
+.party { background: #f4a261; }
+.strategy { background: #2a9d8f; }
+.deduction { background: #6a4c93; }
+.family { background: #e76f51; }
+
+/* 📦 카드 2열 */
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* 카드 + 옆 버튼 */
+.game-row {
+  display: flex;
+  align-items: center;
+}
+
+.side-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: 6px;
+}
+
+.side-actions button {
+  font-size: 11px;
+  padding: 4px 6px;
+}
+
+/* 카드 */
+.game-card {
+  flex: 1;
+  background: #fff;
+  padding: 8px 10px;
+  font-size: 11px;
+  border-left: 6px solid #ccc;
+}
+
+.game-card.파티 { border-color: #f4a261; }
+.game-card.전략 { border-color: #2a9d8f; }
+.game-card.추리 { border-color: #6a4c93; }
+.game-card.가족 { border-color: #e76f51; }
+
+/* 카드 안 콘텐츠 좌우 대칭 보정 */
+.card {
+  box-sizing: border-box;
+}
+
+/* 로그인 카드 안 입력/버튼 정렬 */
+.card input,
+.card button,
+.card select {
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
